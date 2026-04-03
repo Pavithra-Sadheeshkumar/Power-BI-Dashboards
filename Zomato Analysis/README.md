@@ -155,4 +155,10 @@ The goal is to analyze business performance, identify top-performing restaurants
 
 ---
 
+## 🚀 How to Use
+1. Download the `.pbix` file from this repository  
+2. Open using Power BI Desktop  
+3. Explore different report pages  
+4. Use slicers and filters for interactive analysis  
+
  
