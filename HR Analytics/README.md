@@ -41,6 +41,15 @@ High employee turnover impacts organizational productivity and incurs significan
 * **Targeted Retention:** HR should prioritize immediate interventions for employees identified in the "High-Risk" table, specifically focusing on career progression timelines for those with 7+ years since their last promotion.
 * **Role-Specific Investigations:** Conduct stay-interviews within the Life Sciences group in R&D to understand the root causes of the elevated turnover in that specific domain.
 
+<img width="887" height="687" alt="image" src="https://github.com/user-attachments/assets/816c91b3-7586-4ad2-90e8-3a75ecad3477" />
+
+<img width="897" height="691" alt="image" src="https://github.com/user-attachments/assets/38dab48c-9f71-46b6-b6a7-37a893c9fd67" />
+
+<img width="1292" height="731" alt="image" src="https://github.com/user-attachments/assets/17163565-b033-4755-b896-85d641107bf0" />
+
+
+
+
 
 
 ---
