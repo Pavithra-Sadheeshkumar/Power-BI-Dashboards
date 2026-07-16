@@ -2,6 +2,17 @@
 
 A comprehensive, interactive Business Intelligence dashboard designed to provide high-level executives with clear insights into sales performance, profitability, and product return metrics. Built with advanced data visualization techniques to facilitate data-driven decision-making.
 
+## 🗄️ Data Source & Dictionary
+* **Source:** The raw transactional data for this project was sourced from [Kaggle].
+* **Scale:** A comprehensive retail dataset containing multi-year sales records across various regions, categories, and customer segments.
+* **Key Calculated Metrics (DAX):**
+  * *Total Profit:* Gross Revenue minus COGS (Cost of Goods Sold) and Discounts.
+  * *Return Rate %:* `DIVIDE([Total Quantity Returned], [Total Quantity Sold])`
+ 
+
+## 🚀 Live Demo & Usage
+* **Interactive Dashboard:** https://app.powerbi.com/groups/me/reports/63722b71-7f17-40ca-a7ce-c1ec47c765f1/5a4d520a32113d70e57a?experience=power-bi
+
 ## 🌟 Key Features
 
 * **Executive Summary View:** Tracks critical KPIs including Gross Revenue, Profit Margins, Total Orders, and New Customers with year-over-year (YoY) comparisons.
@@ -76,6 +87,7 @@ Hover-activated tooltips providing immediate context, such as top products sold 
 Visualizes the most and least profitable products alongside category sales velocity sparklines.
 
 <img width="940" height="431" alt="image" src="https://github.com/user-attachments/assets/baa4b1f9-00f6-4ff9-9a2b-6e99ca83ff4e" />
+
 
 
 
