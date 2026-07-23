@@ -1,63 +1,51 @@
 # 📊  Zomato Global Restaurant Analysis
 ---
-## 📌 Project Overview
-This project involves transforming raw multi-continent restaurant data into a comprehensive business intelligence solution for Zomato. 
-The goal is to analyze business performance, identify top-performing restaurants, and unearth data anomalies across global markets.
 
----
-## 🎯 Objectives
+# 📊 Zomato Restaurant Analytics (Simplilearn Certification Project)
 
-- Analyze restaurant performance based on ratings and votes.
-  
-- Identify top restaurants across different regions.
-  
-- Explore cuisine distribution and availability.
-  
-- Enable dynamic filtering and drill-through insights.
+### 📌 Project Overview
+This Power BI project was completed as part of the Simplilearn Data Manipulation and Reporting with Power BI Certification. The objective was to analyze business data for Zomato, a global restaurant search and discovery service, to uncover hidden anomalies and accurately judge business performance across multiple continents. 
 
-  ---
-
-  ## 📈 Key Features
-
-- **Interactive dashboards** with slicers, filters, and reset functionality for seamless data exploration.
-  
-- **Drill-through and custom navigation** enabling detailed, multi-level analysis across regions and cities.
-   
-- **Advanced analytics** to identify top-performing restaurants based on ratings, votes, and customer preferences.
-  
-- **Comprehensive regional insights** including cuisine variations, pricing patterns, and online delivery availability.
-
-   ---
-
- ## 📂 Dataset
- 
-**Source**: Zomato Dataset 
-
-**Data includes:**
-  - Restaurant details  
-  - Ratings and votes  
-  - Cuisines  
-  - Location (city, country)  
-  - Cost and delivery options
-
-    ---
-    
-## 🛠️ Tools & Technologies
-
-- Power BI (Data visualization & dashboarding)
--- Data Modeling (Fact & Dimension Tables) 
-- Excel / CSV (Data source)
+### 🎯 High-Level Business Requirements
+The project required the creation of a consolidated, interactive, multi-page Power BI report accessible via web browser and mobile devices. Key requirements included the ability to analyze:
+*   Total number of restaurants across continents, countries, and cities, with the ability to drill down from a global to a granular level.
+*   Top-performing restaurants based on average customer ratings and the least average cost.
+*   Top-ranking restaurants based on the number of cuisines served.
+*   Detailed restaurant information (address, cuisines) filtered by geographic dimensions, available services (online delivery, table booking), and rating colors denoting average rating slabs
 
 ---
 
-## 🔄 Data Preparation
-- Imported and appended regional datasets into a single consolidated table  
-- Performed data cleaning and transformations for consistency  
-- Built data model with proper relationships between fact and dimension tables  
-- Created a dedicated measure table for all KPIs
+## ⚙️ Data Transformation & Cleaning (Power Query)
+Data was imported from multiple Excel files representing different continents (Africa, Asia, Europe, North America, South America, Oceania) and a Fact Table. Extensive data transformation was performed to ensure accuracy and consistency:
 
-  ---
-  
+**1. Data Cleansing & Formatting:**
+*   Corrected specific city names in the dataset, including:
+    *   Removing the word "city" from all city names.
+    *   Updating "Sí£o Paulo" to "São Paulo".
+    *   Updating "Cedar Rapids/Iowa City" to "Cedar Rapids".
+    *   Updating "ÛÁstanbul" to "Istanbul".
+*   Removed unused columns to optimize the data model.
+
+**2. Data Restructuring:**
+*   Split combined location data into separate columns for "Restaurant Name" and "Restaurant Address".
+*   Created a separate table to handle the list of cuisines served by each restaurant.
+*   Ensured the "Country-Code" dimension table contained only unique and non-blank values.
+
+**3. Geographic Categorization & Grouping:**
+*   Categorized geographic columns appropriately and created a user-defined geographic hierarchy.
+*   Grouped countries into their respective continents based on defined mappings (e.g., Africa – South Africa, Asia – India, Europe – United Kingdom). 
+*   Created a calculated "Continent" column in the "Country Code" table and used lookups where necessary to map this data.
+
+---
+
+## 🧮 DAX & Data Modeling
+The data model was structured to support accurate aggregations, with careful attention paid to relationship cardinality and cross-filter directions. 
+
+**Key Calculated Columns:**
+*   **Rating Color:** A conditional column categorizing aggregate ratings into distinct color slabs (e.g., Above 4.5 = Dark Green, 0 to 1.7 = White).
+
+
+
 ## 📊 Dashboard Pages
 
 ### 🌍 Global Overall
