@@ -5,11 +5,25 @@ This project is an end-to-end HR analytics dashboard built in Power BI. The goal
 
 You can interact with the live dashboard here: https://app.powerbi.com/groups/me/reports/fea16639-320d-4e6c-8b0e-cd8f5c56e379/6dd946e3cd27159e9303?experience=power-bi
 
-## 🎯 Business Problem
-High employee turnover impacts organizational productivity and incurs significant recruitment costs. The HR department needed a dynamic, data-driven solution to:
-* Track the overall attrition rate and identify demographic and departmental trends.
-* Assess employee performance and job satisfaction scores.
-* Proactively identify "High-Risk" employees based on historical promotion data and satisfaction levels to deploy targeted retention initiatives.
+### 🎯 Business Questions Answered
+
+*   **What is the overall employee attrition rate, and what is the profile of a departing employee?**
+    *   The organization has an overall attrition rate of 16.12%, with 237 employees having left out of a total workforce of 1,470.
+    *   The average departing employee is 34 years old and has an average salary of 14,559. 
+    *   Across all age groups, male employees consistently exhibit a higher attrition rate than female employees, peaking at 72.22% for males over the age of 50.
+
+*   **Which departments and educational backgrounds are experiencing the highest turnover?**
+    *   The Sales department faces the highest attrition rate at 20.63%, followed closely by Human Resources at 19.05%.
+    *   In terms of education, employees with backgrounds in Life Sciences (89 leavers) and Medical fields (63 leavers) represent the highest volume of total attrition.
+
+*   **How does job satisfaction correlate with the likelihood of attrition across departments?**
+    *   Low job satisfaction is a primary driver of turnover, with employees scoring a "1" in Job Satisfaction making up the majority of the high-risk group.
+    *   This trend is most severe in the Human Resources department, where the attrition rate spikes to a critical 45.45% among employees reporting the lowest job satisfaction level.
+
+*   **What actionable factors contribute most to an employee becoming a retention risk?**
+    *   Stagnant career growth is a major risk factor; long promotion gaps contribute significantly to higher employee risk, with some high-risk individuals going up to 15 years since their last promotion.
+    *   Currently, the Research & Development department holds the highest number of high-risk employees. 
+    *   These factors contribute to an overall department Health Score of 74.54, which currently falls short of the target goal of 85.
 
 ## 🛠️ Technology Stack & Tools
 * **Data Visualization & Analytics:** Power BI
@@ -41,11 +55,20 @@ High employee turnover impacts organizational productivity and incurs significan
 * **Targeted Retention:** HR should prioritize immediate interventions for employees identified in the "High-Risk" table, specifically focusing on career progression timelines for those with 7+ years since their last promotion.
 * **Role-Specific Investigations:** Conduct stay-interviews within the Life Sciences group in R&D to understand the root causes of the elevated turnover in that specific domain.
 
+ ## 💡 Key Insights & Visualizations
+
 <img width="887" height="687" alt="image" src="https://github.com/user-attachments/assets/816c91b3-7586-4ad2-90e8-3a75ecad3477" />
 
 <img width="897" height="691" alt="image" src="https://github.com/user-attachments/assets/38dab48c-9f71-46b6-b6a7-37a893c9fd67" />
 
 <img width="1292" height="731" alt="image" src="https://github.com/user-attachments/assets/17163565-b033-4755-b896-85d641107bf0" />
+
+
+Based on the dashboard analysis, key findings include:
+
+*   **Departmental Attrition:** The Sales department experiences the highest attrition rate at **20.63%**, significantly higher than the Research & Development department's rate of **13.84%**.
+*   **Job Satisfaction Impact:** Low job satisfaction is a primary indicator of flight risk. Employees reporting the lowest possible Job Satisfaction score of **1** make up the majority of the high-risk employee group.
+*   **Career Progression Risk:** Stagnant career growth heavily contributes to higher employee risk. Analysis of the high-risk employee group reveals significant promotion gaps, with many individuals going **7 to 15 years** since their last promotion.
 
 
 
